@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/Task07-ProjetoIntegrador/Task04/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Task07-ProjetoIntegrador/Task04/app/src/main/res/layout/card_produtos.xml" value="0.165625" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Task07-ProjetoIntegrador/Task04/app/src/main/res/layout/fragment_cadastrar_produtos.xml" value="0.10235507246376811" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Task07-ProjetoIntegrador/Task04/app/src/main/res/layout/fragment_produ.xml" value="0.10235507246376811" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Task07-ProjetoIntegrador/Task04/app/src/main/res/layout/fragment_splash.xml" value="0.10235507246376811" />
+      </map>
+    </option>
+  </component>
+</project>
