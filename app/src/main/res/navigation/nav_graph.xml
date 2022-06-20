@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/listagemProdutosFragment"
+        android:name="paulo.antonio.cestafeira.fragments.ListagemProdutosFragment"
+        android:label="fragment_listagem_produtos"
+        tools:layout="@layout/fragment_listagem_produtos" >
+        <action
+            android:id="@+id/action_listagemProdutosFragment_to_cadastrarProdutosFragment"
+            app:destination="@id/cadastrarProdutosFragment" />
+        <action
+            android:id="@+id/action_listagemProdutosFragment_to_produtoFragment"
+            app:destination="@id/produtoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarProdutosFragment"
+        android:name="paulo.antonio.cestafeira.fragments.CadastrarProdutosFragment"
+        android:label="fragment_cadastrar_produtos"
+        tools:layout="@layout/fragment_cadastrar_produtos" >
+        <action
+            android:id="@+id/action_cadastrarProdutosFragment_to_listagemProdutosFragment"
+            app:destination="@id/listagemProdutosFragment"
+            app:popUpTo="@id/listagemProdutosFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="paulo.antonio.cestafeira.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_acessoFragment"
+            app:destination="@id/acessoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="paulo.antonio.cestafeira.fragments.usuario.PerfilUsuarioFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/cuponsFragment"
+        android:name="paulo.antonio.cestafeira.fragments.CuponsFragment"
+        android:label="fragment_cupons"
+        tools:layout="@layout/fragment_cupons" />
+    <fragment
+        android:id="@+id/cestaFragment"
+        android:name="paulo.antonio.cestafeira.fragments.CestaProdutosFragment"
+        android:label="fragment_cesta"
+        tools:layout="@layout/fragment_cesta" />
+    <fragment
+        android:id="@+id/acessoFragment"
+        android:name="paulo.antonio.cestafeira.fragments.AcessoFragment"
+        android:label="fragment_acesso"
+        tools:layout="@layout/fragment_acesso" >
+        <action
+            android:id="@+id/action_acessoFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_acessoFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="paulo.antonio.cestafeira.fragments.usuario.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_listagemProdutosFragment"
+            app:destination="@id/listagemProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="paulo.antonio.cestafeira.fragments.usuario.CadastroFragment"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/produtoFragment"
+        android:name="paulo.antonio.cestafeira.fragments.ProdutoFragment"
+        android:label="fragment_produto"
+        tools:layout="@layout/fragment_produto" >
+        <action
+            android:id="@+id/action_produtoFragment_to_listagemProdutosFragment"
+            app:destination="@id/listagemProdutosFragment" />
+    </fragment>
+</navigation>
