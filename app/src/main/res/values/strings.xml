@@ -8,11 +8,6 @@
     <string name="text_nome_produto">Nome do Produto</string>
     <string name="input_produto">Ex: Laranja</string>
     <string name="text_categoria">Categoria</string>
-    <string-array name="input_categoria">
-        <item>Legumes</item>
-        <item>Verdura</item>
-        <item>Fruta</item>
-    </string-array>
     <string-array name="pesquisar_enderecos">
         <item>Rua Libero Badaró, 123</item>
         <item>Rua Rocha Camargo, 109</item>
@@ -33,14 +28,5 @@
     <string name="_00_00">R$00,00</string>
     <string name="button">Button</string>
     <string name="btn_comprar">Comprar</string>
-    <string name="menu_home">Home</string>
-    <string name="menu_cupons">Cupons</string>
-    <string name="menu_cesta">Carrinho</string>
-    <string name="menu_perfil">Perfil</string>
-    <string name="dialog">"Esse produto não possui nenhum tipo de agrotóxico." +
-                " Ele é totalmente orgânico"</string>
-    <string name="title_dialog">"Produto Orgânco"</string>
-    <string name="popUp">popUp Orgânico</string>
-    <string name="_08420_000">08420-000</string>
-    <string name="Adicionar_mais" />
+    <string name="Hinr_cep">12345–220</string>
 </resources>

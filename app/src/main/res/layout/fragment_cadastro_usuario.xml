@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastroUsuarioFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2FECFBEE">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="164dp"
+                android:layout_height="192dp"
+                android:layout_marginTop="68dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/cad_Email"
+                android:layout_width="314dp"
+                android:layout_height="68dp"
+                android:background="@drawable/edit_text"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#403C3C"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <EditText
+                android:id="@+id/cad_Senha"
+                android:layout_width="314dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/edit_text"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#403C3C"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="@+id/cad_Email"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cad_Email"
+                app:layout_constraintTop_toBottomOf="@+id/cad_Email" />
+
+            <EditText
+                android:id="@+id/cad_Cep"
+                android:layout_width="314dp"
+                android:layout_height="68dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text"
+                android:drawableStart="@drawable/ic_baseline_add_location_24"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:hint="Cep"
+                android:inputType="textPostalAddress"
+                android:paddingStart="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#403C3C"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="@+id/cad_Senha"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/cad_Senha"
+                app:layout_constraintTop_toBottomOf="@+id/cad_Senha" />
+
+            <Button
+                android:id="@+id/btn_cadastrar"
+                android:layout_width="203dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="76dp"
+                android:backgroundTint="#FFC107"
+                android:text="Cadastrar"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cad_Cep"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/cad_Cep"
+                app:layout_constraintTop_toBottomOf="@+id/cad_Cep" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+
+</FrameLayout>
