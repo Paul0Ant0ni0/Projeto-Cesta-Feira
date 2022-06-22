@@ -35,11 +35,6 @@ class ListagemProdutosFragment : Fragment() {
         binding.recyclerProdutos.layoutManager = GridLayoutManager(context, 2)
         binding.recyclerProdutos.setHasFixedSize(true)
 
-        // Navegar para o próximo fragment
-        binding.floatingAdd.setOnClickListener {
-            findNavController().navigate(R.id.action_listagemProdutosFragment_to_cadastrarProdutosFragment)
-        }
-
         mainViewModel.myProdutosResponse.observe(viewLifecycleOwner){
             response -> if (response.body() != null){
                 adapter.setList(response.body()!!)

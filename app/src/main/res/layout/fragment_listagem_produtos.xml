@@ -25,21 +25,6 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
-        android:clickable="true"
-        android:src="@drawable/ic_baseline_add_circle_24"
-        app:backgroundTint="#FF9800"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_conversion_absoluteHeight="56dp"
-        tools:layout_conversion_absoluteWidth="56dp" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="412dp"
         android:layout_height="67dp"

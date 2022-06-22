@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/tela_produtos"
+            android:layout_width="187dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="#7ACC96"
+            android:text="Produtos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tela_admin"
+            android:layout_width="187dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="68dp"
+            android:backgroundTint="#F5B81B"
+            android:text="Admin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toEndOf="@+id/tela_produtos"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/tela_dashboard"
+            android:layout_width="187dp"
+            android:layout_height="178dp"
+            android:layout_marginTop="208dp"
+            android:background="#7A2B96DA"
+            android:text="Dashboard"
+            app:layout_constraintEnd_toEndOf="@+id/tela_admin"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="@+id/tela_produtos"
+            app:layout_constraintTop_toTopOf="@+id/tela_produtos" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ilustracion"
+            app:layout_constraintEnd_toEndOf="@+id/tela_dashboard"
+            app:layout_constraintStart_toStartOf="@+id/tela_dashboard"
+            app:layout_constraintTop_toBottomOf="@+id/tela_dashboard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

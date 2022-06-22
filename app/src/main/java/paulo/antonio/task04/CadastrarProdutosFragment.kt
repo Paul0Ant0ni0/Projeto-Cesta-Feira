@@ -42,7 +42,7 @@ class CadastrarProdutosFragment : Fragment() {
         }
 
         binding.btnVoltar.setOnClickListener {
-            findNavController().navigate(R.id.action_cadastrarProdutosFragment_to_listagemProdutosFragment)
+            findNavController().navigate(R.id.action_cadastrarProdutosFragment_to_adminProdutoFragment)
         }
 
         binding.inputImg.setOnClickListener {
@@ -68,7 +68,7 @@ class CadastrarProdutosFragment : Fragment() {
             val produtos = Produtos(0, nomeProd, descProd, imgProd, pesoProd, valorProd, categoria)
             mainViewModel.addProduto(produtos)
             Toast.makeText(context, "Produto adicionado", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_cadastrarProdutosFragment_to_listagemProdutosFragment)
+            findNavController().navigate(R.id.action_cadastrarProdutosFragment_to_adminProdutoFragment)
         } else {
             Toast.makeText(context, "Verifique os campos", Toast.LENGTH_SHORT).show()
         }
