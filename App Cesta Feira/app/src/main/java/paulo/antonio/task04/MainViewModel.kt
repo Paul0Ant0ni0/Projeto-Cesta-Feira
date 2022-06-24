@@ -19,6 +19,9 @@ class MainViewModel @Inject constructor(
     private val repository: Repository
 ): ViewModel() {
 
+    var produtoSelecionado : Produtos? = null
+
+
     private var _myCategoriaResponse = MutableLiveData<Response<List<Categoria>>>()
 
     val myCategoriaResponse: LiveData<Response<List<Categoria>>> =
@@ -64,5 +67,21 @@ class MainViewModel @Inject constructor(
                 Log.d("Erro Listar Produtos", e.message.toString())
             }
         }
+    }
+
+    fun updateTarefa(produtos: Produtos) {
+        viewModelScope.launch {
+            try {
+
+                repository.updateProtuto(produtos)
+                listProduto()
+
+            } catch (e: Exception) {
+                Log.d("Error Put", e.message.toString())
+
+
+            }
+        }
+
     }
 }

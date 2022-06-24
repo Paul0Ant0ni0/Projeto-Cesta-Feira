@@ -19,14 +19,15 @@
     </fragment>
     <fragment
         android:id="@+id/cadastrarProdutosFragment"
-        android:name="paulo.antonio.task04.CadastrarProdutosFragment"
+        android:name="paulo.antonio.task04.acesso.admin.AdminCadProduFragment"
         android:label="fragment_cadastrar_produtos"
         tools:layout="@layout/fragment_cadastrar_produtos" >
         <action
-            android:id="@+id/action_cadastrarProdutosFragment_to_adminProdutoFragment"
-            app:destination="@id/adminProdutoFragment"
-            app:popUpTo="@id/adminProdutoFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_cadastrarProdutosFragment_to_adminFragment"
+            app:destination="@id/adminFragment" />
+        <action
+            android:id="@+id/action_cadastrarProdutosFragment_to_listProdFragment"
+            app:destination="@id/listProdFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment2"
@@ -41,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/acessoFragment"
-        android:name="paulo.antonio.task04.AcessoFragment"
+        android:name="paulo.antonio.task04.acesso.AcessoFragment"
         android:label="fragment_acesso"
         tools:layout="@layout/fragment_acesso" >
         <action
@@ -56,7 +57,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="paulo.antonio.task04.LoginFragment"
+        android:name="paulo.antonio.task04.acesso.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -70,7 +71,7 @@
     </fragment>
     <fragment
         android:id="@+id/cadastroUsuarioFragment"
-        android:name="paulo.antonio.task04.CadastroUsuarioFragment"
+        android:name="paulo.antonio.task04.acesso.cliente.CadastroUsuarioFragment"
         android:label="fragment_cadastro_usuario"
         tools:layout="@layout/fragment_cadastro_usuario" >
         <action
@@ -83,28 +84,57 @@
         android:id="@+id/produtoFragment"
         android:name="paulo.antonio.task04.ProdutoFragment"
         android:label="fragment_produto"
-        tools:layout="@layout/fragment_produto" />
+        tools:layout="@layout/fragment_produto" >
+        <action
+            android:id="@+id/action_produtoFragment_to_cestaDeComprasFragment"
+            app:destination="@id/cestaDeComprasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/perfilUsuarioFragment"
-        android:name="paulo.antonio.task04.PerfilUsuarioFragment"
+        android:name="paulo.antonio.task04.acesso.cliente.PerfilUsuarioFragment"
         android:label="fragment_perfil_usuario"
         tools:layout="@layout/fragment_perfil_usuario" />
     <fragment
         android:id="@+id/adminFragment"
-        android:name="paulo.antonio.task04.AdminFragment"
+        android:name="paulo.antonio.task04.acesso.admin.AdminFragment"
         android:label="fragment_admin"
         tools:layout="@layout/fragment_admin" >
         <action
-            android:id="@+id/action_adminFragment_to_adminProdutoFragment"
-            app:destination="@id/adminProdutoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/adminProdutoFragment"
-        android:name="paulo.antonio.task04.AdminProdutoFragment"
-        android:label="fragment_admin_produto"
-        tools:layout="@layout/fragment_admin_produto" >
+            android:id="@+id/action_adminFragment_to_listProdFragment"
+            app:destination="@id/listProdFragment" />
         <action
-            android:id="@+id/action_adminProdutoFragment_to_cadastrarProdutosFragment"
+            android:id="@+id/action_adminFragment_to_cadastrarProdutosFragment"
             app:destination="@id/cadastrarProdutosFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/cestaDeComprasFragment"
+        android:name="paulo.antonio.task04.CestaDeComprasFragment"
+        android:label="fragment_cesta_de_compras"
+        tools:layout="@layout/fragment_cesta_de_compras" >
+        <action
+            android:id="@+id/action_cestaDeComprasFragment_to_produtoFragment"
+            app:destination="@id/produtoFragment"
+            app:popUpTo="@id/produtoFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_cestaDeComprasFragment_to_listagemProdutosFragment"
+            app:destination="@id/listagemProdutosFragment"
+            app:popUpTo="@id/listagemProdutosFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listProdFragment"
+        android:name="paulo.antonio.task04.acesso.admin.ListProdFragment"
+        android:label="fragment_list_prod"
+        tools:layout="@layout/fragment_list_prod" >
+        <action
+            android:id="@+id/action_listProdFragment_to_cadastrarProdutosFragment"
+            app:destination="@id/cadastrarProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/painelFragment"
+        android:name="paulo.antonio.task04.acesso.admin.PainelFragment"
+        android:label="fragment_painel"
+        tools:layout="@layout/fragment_painel" />
+
 </navigation>

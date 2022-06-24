@@ -8,16 +8,29 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Task04/app/src/main/res/layout/fragment_cadastrar_produtos.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Task04/app/src/main/res/layout/fragment_listagem_produtos.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/activity_main.xml" value="0.13703703703703704" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_produtos.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_banner.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_categorias.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_cesta.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_header.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_listprodutoadmin.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/card_produtos.xml" value="0.22" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_acesso.xml" value="0.1796875" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_admin.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_admin_list_produ.xml" value="0.1796875" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_admin_produto.xml" value="0.1796875" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_cadastrar_produtos.xml" value="0.1796875" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_cadastrar_produtos.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_cadastro_usuario.xml" value="0.13703703703703704" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_listagem_produtos.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_cesta_de_compras.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_layout.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_list_prod.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_listagem_produtos.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_login.xml" value="0.1796875" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_produto.xml" value="0.1796875" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_painel.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_painel_admin.xml" value="0.1527777777777778" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_perfil_usuario.xml" value="0.22" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_produto.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/fragment_splash.xml" value="0.13703703703703704" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/generation-Projeto/app/src/main/res/layout/home_layout.xml" value="0.22" />
         <entry key="..\:/Users/sosil/OneDrive/Desktop/Generation/Cesta-feira/Projeto-Cesta-Feira-main/Cesta feira/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Users/sosil/OneDrive/Desktop/Generation/Cesta-feira/Projeto-Cesta-Feira-main/Cesta feira/app/src/main/res/layout/card_produtos.xml" value="0.3625" />
         <entry key="..\:/Users/sosil/OneDrive/Desktop/Generation/Cesta-feira/Projeto-Cesta-Feira-main/Cesta feira/app/src/main/res/layout/fragment_cadastrar_produtos.xml" value="0.276268115942029" />
@@ -33,5 +46,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3333333333333333" />
+      </ProjectState>
+    </option>
   </component>
 </project>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:backgroundTint="#EEFFD5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textNomeCesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Nome do produto"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgCesta"
+                    android:layout_width="102dp"
+                    android:layout_height="97dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textInfoCesta"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/alcachofra" />
+
+                <TextView
+                    android:id="@+id/textInfoCesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Compra a cada 100g"
+                    app:layout_constraintEnd_toEndOf="@+id/textNomeCesta"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textNomeCesta"
+                    tools:layout_editor_absoluteY="47dp" />
+
+                <TextView
+                    android:id="@+id/textQdtCesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100g"
+                    android:textColor="#1B1818"
+                    tools:layout_editor_absoluteX="180dp"
+                    tools:layout_editor_absoluteY="121dp" />
+
+                <ImageView
+                    android:id="@+id/menosCesta"
+                    android:layout_width="22dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textQdtCesta"
+                    app:layout_constraintHorizontal_bias="0.783"
+                    app:layout_constraintStart_toEndOf="@+id/imgCesta"
+                    app:srcCompat="@drawable/icon_minus"
+                    tools:layout_editor_absoluteY="122dp" />
+
+                <ImageView
+                    android:id="@+id/maisCesta"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textQdtCesta"
+                    app:layout_constraintTop_toBottomOf="@+id/textInfoCesta"
+                    app:layout_constraintVertical_bias="0.679"
+                    app:srcCompat="@drawable/icon_plus" />
+
+                <TextView
+                    android:id="@+id/textValorCesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$ 00, 00"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.829"
+                    app:layout_constraintStart_toEndOf="@+id/maisCesta"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.835" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

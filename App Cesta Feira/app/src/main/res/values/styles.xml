@@ -5,4 +5,18 @@
     <item name="android:backgroundTint">@color/azul_claro</item>
     <item name="android:textSize">18sp</item>
 </style>
+
+    <style name="MyFoodTabLayoutTextAppearance" parent="Base.Widget.Design.TabLayout">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="rounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="rounded_shop">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

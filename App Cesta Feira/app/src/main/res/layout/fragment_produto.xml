@@ -14,7 +14,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">>
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -26,19 +27,19 @@
                 app:layout_constraintTop_toTopOf="parent">>
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/imgPreview"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/bg_produto"
                     android:src="@drawable/lim_o"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/bg_produto" />
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/nome_do_pro"
+                android:id="@+id/nomePreview"
                 android:layout_width="170dp"
                 android:layout_height="24dp"
                 android:layout_alignParentLeft="true"
@@ -54,51 +55,54 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/infoPreview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="40dp"
                 android:text="Compra à cada 100g"
-                app:layout_constraintEnd_toEndOf="@+id/nome_do_pro"
+                android:textColor="#615D5D"
+                app:layout_constraintEnd_toEndOf="@+id/nomePreview"
                 app:layout_constraintHorizontal_bias="0.1"
-                app:layout_constraintStart_toStartOf="@+id/nome_do_pro"
-                app:layout_constraintTop_toBottomOf="@+id/nome_do_pro" />
+                app:layout_constraintStart_toStartOf="@+id/nomePreview"
+                app:layout_constraintTop_toBottomOf="@+id/nomePreview" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/InfoPreviewTwo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="Peso do Quilo: R$"
-                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                android:textColor="#615D5D"
+                app:layout_constraintEnd_toEndOf="@+id/infoPreview"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintStart_toStartOf="@+id/infoPreview"
+                app:layout_constraintTop_toBottomOf="@+id/infoPreview" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/infoPreviewthree"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="71dp"
                 android:layout_marginTop="15dp"
                 android:text="Peso estimando por item: R$"
-                app:layout_constraintEnd_toEndOf="@+id/textView5"
-                app:layout_constraintStart_toStartOf="@+id/textView5"
-                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                android:textColor="#615D5D"
+                app:layout_constraintEnd_toEndOf="@+id/InfoPreviewTwo"
+                app:layout_constraintStart_toStartOf="@+id/InfoPreviewTwo"
+                app:layout_constraintTop_toBottomOf="@+id/InfoPreviewTwo" />
 
             <View
                 android:id="@+id/divider"
                 android:layout_width="409dp"
                 android:layout_height="1dp"
                 android:layout_marginStart="1dp"
-                android:layout_marginTop="104dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="1dp"
                 android:backgroundTint="#A9AAC8D3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                app:layout_constraintTop_toBottomOf="@+id/infoPreviewthree" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView3"
@@ -108,7 +112,6 @@
                 app:cardBackgroundColor="#10B017"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="2dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider">
@@ -119,7 +122,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textDescricaoTitulo"
+                        android:id="@+id/textTitleCuriosidade"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -129,7 +132,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textDescricao"
+                        android:id="@+id/textDecriPreview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -142,23 +145,25 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/infoProdutor1"
                 android:layout_width="391dp"
                 android:layout_height="96dp"
                 android:layout_marginTop="28dp"
                 android:text="Voce sabia que esse alimento foi produzido por um agricultor familiar?! Essa agricultura é realizada por pessoas que produzem seu trabalho para o sustento de sua familia e o varejo de sua região. Isso significa que esse produto foi plantado com muito amor e dedicação."
+                android:textColor="#615D5D"
                 app:layout_constraintEnd_toEndOf="@+id/cardView3"
                 app:layout_constraintStart_toStartOf="@+id/cardView3"
                 app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/infoProdutor2"
                 android:layout_width="391dp"
                 android:layout_height="96dp"
                 android:text="Os produtos feitos por agricultores familiares não prejudicam o solo e não utilizam agrotoxicos, o que promove a agricultura orgânica, deixando o alimento mais fresco e saudável para o consumidor."
-                app:layout_constraintEnd_toEndOf="@+id/textView6"
-                app:layout_constraintStart_toStartOf="@+id/textView6"
-                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                android:textColor="#615D5D"
+                app:layout_constraintEnd_toEndOf="@+id/infoProdutor1"
+                app:layout_constraintStart_toStartOf="@+id/infoProdutor1"
+                app:layout_constraintTop_toBottomOf="@+id/infoProdutor1" />
 
             <View
                 android:id="@+id/divider2"
@@ -169,23 +174,24 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="16dp"
                 android:background="?android:attr/listDivider"
-                app:layout_constraintBottom_toTopOf="@+id/toolbar"
+                app:layout_constraintBottom_toTopOf="@+id/menuPreview"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+                app:layout_constraintTop_toBottomOf="@+id/infoProdutor2" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/infoPreview3"
                 android:layout_width="391dp"
                 android:layout_height="35dp"
-                android:layout_marginTop="36dp"
                 android:text="Atenção este item tem peso variável e seu valor total pode ser atualizado pela loja após a pesagem"
-                app:layout_constraintEnd_toEndOf="@+id/textView7"
-                app:layout_constraintStart_toStartOf="@+id/textView7"
-                app:layout_constraintTop_toBottomOf="@+id/divider2" />
+                android:textColor="#615D5D"
+                app:layout_constraintEnd_toEndOf="@+id/infoProdutor2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/infoProdutor2"
+                app:layout_constraintTop_toBottomOf="@+id/infoProdutor2" />
 
             <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
+                android:id="@+id/menuPreview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="?attr/colorPrimary"
@@ -197,7 +203,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/total_compra"
+                android:id="@+id/totalQtdPreview"
                 android:layout_width="123dp"
                 android:layout_height="36dp"
                 android:layout_marginStart="16dp"
@@ -209,58 +215,72 @@
                 android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="@+id/menuPreview"
                 app:layout_constraintVertical_bias="0.2" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/maisPreview"
                 android:layout_width="21dp"
                 android:layout_height="21dp"
                 android:layout_marginEnd="12dp"
                 android:background="#00433F3F"
                 android:src="@drawable/ic_baseline_add_24"
-                app:layout_constraintBottom_toBottomOf="@+id/total_compra"
-                app:layout_constraintEnd_toEndOf="@+id/total_compra"
-                app:layout_constraintTop_toTopOf="@+id/total_compra"
+                app:layout_constraintBottom_toBottomOf="@+id/totalQtdPreview"
+                app:layout_constraintEnd_toEndOf="@+id/totalQtdPreview"
+                app:layout_constraintTop_toTopOf="@+id/totalQtdPreview"
                 app:layout_constraintVertical_bias="0.6" />
 
             <ImageButton
-                android:id="@+id/imageButton5"
+                android:id="@+id/menosPreview"
                 android:layout_width="26dp"
                 android:layout_height="18dp"
                 android:background="#00FFFFFF"
                 android:src="@drawable/minus"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
-                app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                app:layout_constraintBottom_toBottomOf="@+id/maisPreview"
+                app:layout_constraintEnd_toStartOf="@+id/maisPreview"
                 app:layout_constraintHorizontal_bias="0.161"
-                app:layout_constraintStart_toStartOf="@+id/total_compra"
-                app:layout_constraintTop_toTopOf="@+id/total_compra"
+                app:layout_constraintStart_toStartOf="@+id/totalQtdPreview"
+                app:layout_constraintTop_toTopOf="@+id/totalQtdPreview"
                 app:layout_constraintVertical_bias="0.75" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/totalValorPreview"
                 android:layout_width="155dp"
                 android:layout_height="36dp"
                 android:background="@color/azul_medio"
                 android:gravity="center"
                 android:paddingStart="10dp"
-                android:text="Adicionar      R$ 10,00"
+                android:text="Adicionar   R$ 10,00"
                 android:textColor="#FFFFFF"
-                app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-                app:layout_constraintEnd_toEndOf="@+id/toolbar"
+                app:layout_constraintBottom_toBottomOf="@+id/menuPreview"
+                app:layout_constraintEnd_toEndOf="@+id/menuPreview"
                 app:layout_constraintHorizontal_bias="0.868"
-                app:layout_constraintStart_toEndOf="@+id/total_compra"
-                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+                app:layout_constraintStart_toEndOf="@+id/totalQtdPreview"
+                app:layout_constraintTop_toTopOf="@+id/menuPreview" />
 
-            <Button
-                android:id="@+id/teste"
+            <TextView
+                android:id="@+id/pesoPreview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Button"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/_00_00"
+                android:textColor="#615D5D"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/nome_do_pro"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/InfoPreviewTwo"
                 app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <TextView
+                android:id="@+id/pesoItenPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="@string/_00_00"
+                android:textColor="#615D5D"
+                app:layout_constraintEnd_toEndOf="@+id/pesoPreview"
+                app:layout_constraintStart_toStartOf="@+id/pesoPreview"
+                app:layout_constraintTop_toBottomOf="@+id/pesoPreview" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#FFE7EF"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp">
+
+            <TextView
+                android:id="@+id/textId"
+                android:layout_width="33dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="80dp"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.268" />
+
+            <TextView
+                android:id="@+id/textNomeProduto"
+                android:layout_width="62dp"
+                android:layout_height="37dp"
+                android:gravity="center_vertical"
+                android:hint="Ex: Amanda"
+                android:text="Uva"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="@+id/textId"
+                app:layout_constraintStart_toEndOf="@+id/textId"
+                app:layout_constraintTop_toTopOf="@+id/textId"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textCategoria"
+                android:layout_width="95dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical"
+                android:hint="Pereira"
+                android:text="Frutas"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textValoradmin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textValoradmin" />
+
+            <TextView
+                android:id="@+id/textValoradmin"
+                android:layout_width="96dp"
+                android:layout_height="19dp"
+                android:text="R$ 20,00"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/textNomeProduto"
+                app:layout_constraintStart_toStartOf="@+id/textId"
+                app:layout_constraintTop_toBottomOf="@+id/textNomeProduto" />
+
+            <ImageView
+                android:id="@+id/imgProd"
+                android:layout_width="154dp"
+                android:layout_height="124dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textValoradmin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/input_img" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="64dp"
+                android:clickable="true"
+                app:backgroundTint="#FF9800"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textId"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
