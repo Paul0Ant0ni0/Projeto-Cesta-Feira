@@ -11,9 +11,6 @@ import paulo.antonio.task04.data.cesta.MainViewModelCesta
 import paulo.antonio.task04.databinding.CardCestaBinding
 
 class CestaAdapter (var context: Context): RecyclerView.Adapter<CestaAdapter.CestaViewHolder>(){
-    private lateinit var adapter: ProdutosAdapter
-    private lateinit var mainViewModel: MainViewModelCesta
-
     private  var adminlistProduto = emptyList<Produtos>()
 
     class CestaViewHolder (val binding: CardCestaBinding) : RecyclerView.ViewHolder(binding.root)
@@ -31,7 +28,7 @@ class CestaAdapter (var context: Context): RecyclerView.Adapter<CestaAdapter.Ces
 
         holder.binding.textNomeCesta.text = produto.nomeProduto
         holder.binding.textQdtCesta.text = produto.quantidade
-        holder.binding.textValorCesta.text = produto.valor
+        holder.binding.textValorCesta.text = "R$ ${produto.valor}"
         holder.binding.textInfoCesta.text = "Compra a cada 100g"
 
         Glide.with(context)
@@ -45,8 +42,8 @@ class CestaAdapter (var context: Context): RecyclerView.Adapter<CestaAdapter.Ces
         return adminlistProduto.size
     }
 
-    fun setList(Produtos: List<Produtos>){
-        adminlistProduto = Produtos.sortedByDescending { it.id }
+    fun setList(produtos: List<Produtos>){
+        adminlistProduto = produtos.sortedByDescending { it.id }
         //notifyDataSetChanged serve para mudar a lista quando atualizae
         notifyDataSetChanged()
     }

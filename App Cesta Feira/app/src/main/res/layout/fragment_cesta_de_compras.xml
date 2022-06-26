@@ -18,11 +18,11 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerProdCesta"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="302dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="32dp"
-                android:background="#703131"
+                android:background="#FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/voltaComprar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import paulo.antonio.task04.adapter.CestaAdapter
@@ -16,8 +17,7 @@ import paulo.antonio.task04.model.Produtos
 class CestaDeComprasFragment : Fragment() {
 
     private lateinit var binding: FragmentCestaDeComprasBinding
-    private val viewModel: MainViewModelCesta by activityViewModels()
-    private var produtoSelecionado: Produtos? = null
+    private lateinit var mainViewModelCesta: MainViewModelCesta
 
 
     override fun onCreateView(
@@ -42,14 +42,20 @@ class CestaDeComprasFragment : Fragment() {
             findNavController().navigate(R.id.action_cestaDeComprasFragment_to_listagemProdutosFragment)
         }
 
+        mainViewModelCesta = ViewModelProvider(this).get(MainViewModelCesta::class.java)
+
 
 
         //instanciando o recyclerView
-        val adapter = context?.let { CestaAdapter(it) }
+        val adapter = CestaAdapter(requireContext())
         binding.recyclerProdCesta.layoutManager = LinearLayoutManager(context)
         binding.recyclerProdCesta.adapter = adapter
         binding.recyclerProdCesta.setHasFixedSize(true)
 
+        mainViewModelCesta.selectCestas.observe(viewLifecycleOwner){ response ->
+            adapter.setList(response)
+
+        }
 
 
 
@@ -57,24 +63,5 @@ class CestaDeComprasFragment : Fragment() {
 
         return binding.root
     }
-/*
-    @SuppressLint("SetTextI18n")
-    private fun recuperarDados() {
-        produtoSelecionado = viewModel.produtoSelecionado
-        if (produtoSelecionado != null) {
-            binding.nomePreview.text = produtoSelecionado?.nomeMarca
-            binding.textDecriPreview.text = produtoSelecionado?.descricao
-            Glide.with(this).load(produtoSelecionado?.imagem).placeholder(R.drawable.bg_produto).into(binding.imgPreview)
-            binding.totalQtdPreview.text = "R$  ${(produtoSelecionado?.quantidade.toString())}"
-            binding.totalValorPreview.text =  "Adicionar   R$ ${(produtoSelecionado?.valor)}"
-        } else {
-            binding.nomePreview.text = null
-            binding.textDecriPreview.text = null
-            Glide.with(this).load(produtoSelecionado?.imagem).placeholder(R.drawable.bg_produto).into(binding.imgPreview)
-            binding.totalQtdPreview.text = null
-            binding.totalValorPreview.text = null
-        }
-    }
 
-*/
 }

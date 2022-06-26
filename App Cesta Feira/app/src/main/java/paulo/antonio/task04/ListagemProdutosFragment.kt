@@ -33,6 +33,10 @@ class ListagemProdutosFragment: Fragment(), TeskClickListener {
             findNavController().navigate(R.id.action_listagemProdutosFragment_to_perfilUsuarioFragment)
         }
 
+        binding.btnCesta.setOnClickListener {
+            findNavController().navigate(R.id.action_listagemProdutosFragment_to_cestaDeComprasFragment)
+        }
+
 
         mainViewModel.listProduto()
 
