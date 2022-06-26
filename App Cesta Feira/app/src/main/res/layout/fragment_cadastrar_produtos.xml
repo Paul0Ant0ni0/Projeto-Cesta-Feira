@@ -227,35 +227,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_descri_produto"
                 tools:ignore="RtlSymmetry" />
 
-            <TextView
-                android:id="@+id/txt_organico"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="@string/text_organico"
-                android:textAlignment="textEnd"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/input_descricao"
-                app:layout_constraintTop_toBottomOf="@+id/input_descricao" />
-
-            <Switch
-                android:id="@+id/input_organico"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:elevation="10dp"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:thumbTint="#FFFFFF"
-                android:trackTint="#10B017"
-                app:layout_constraintEnd_toEndOf="@+id/txt_organico"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/txt_organico"
-                app:layout_constraintTop_toBottomOf="@+id/txt_organico"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
-
             <Button
                 android:id="@+id/btn_adicionar_produto"
                 android:layout_width="230dp"

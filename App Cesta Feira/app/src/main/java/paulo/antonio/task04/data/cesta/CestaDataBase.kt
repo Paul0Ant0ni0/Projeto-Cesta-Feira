@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import kotlinx.coroutines.InternalCoroutinesApi
 
 
-@Database(entities = [Cesta::class], version = 1, exportSchema = false)
+@Database(entities = [Produtos::class], version = 1, exportSchema = false)
 abstract class CestaDataBase : RoomDatabase() {
 
     abstract fun cestaDao(): CestaDao

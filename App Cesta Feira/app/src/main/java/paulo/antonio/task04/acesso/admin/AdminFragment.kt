@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import paulo.antonio.task04.MainViewModel
 import paulo.antonio.task04.R
 import paulo.antonio.task04.databinding.FragmentAdminBinding
 
 class AdminFragment : Fragment() {
     private lateinit var binding: FragmentAdminBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,6 +22,11 @@ class AdminFragment : Fragment() {
 
         binding.telaProdutos.setOnClickListener {
             findNavController().navigate(R.id.action_adminFragment_to_listProdFragment)
+        }
+
+        binding.telaAdd.setOnClickListener{
+            findNavController().navigate(R.id.action_adminFragment_to_cadastrarProdutosFragment2)
+
         }
 
         return binding.root

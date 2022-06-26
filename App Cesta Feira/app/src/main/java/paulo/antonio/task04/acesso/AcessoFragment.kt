@@ -1,6 +1,5 @@
 package paulo.antonio.task04.acesso
 
-
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -58,8 +57,8 @@ class AcessoFragment : Fragment() {
                 response?.let {
 
                     val CEPs: CEP? = it.body()
-                    Log.d("CEP", CEPs.toString())
-                    Toast.makeText(context,"CEP: "+CEPs.toString(), Toast.LENGTH_SHORT)
+                    Log.d("Erro", CEPs.toString())
+                    Toast.makeText(context,"Cep: "+CEPs.toString(), Toast.LENGTH_SHORT)
                         .show()
                 }
 

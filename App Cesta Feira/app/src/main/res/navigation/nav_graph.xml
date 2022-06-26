@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_listagem_produtos" >
         <action
             android:id="@+id/action_listagemProdutosFragment_to_produtoFragment"
-            app:destination="@id/produtoFragment" />
+            app:destination="@id/produtoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/slide_in_left" />
         <action
             android:id="@+id/action_listagemProdutosFragment_to_perfilUsuarioFragment"
             app:destination="@id/perfilUsuarioFragment" />
@@ -24,10 +26,14 @@
         tools:layout="@layout/fragment_cadastrar_produtos" >
         <action
             android:id="@+id/action_cadastrarProdutosFragment_to_adminFragment"
-            app:destination="@id/adminFragment" />
+            app:destination="@id/adminFragment"
+            app:popUpTo="@id/adminFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_cadastrarProdutosFragment_to_listProdFragment"
-            app:destination="@id/listProdFragment" />
+            app:destination="@id/listProdFragment"
+            app:popUpTo="@id/listProdFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment2"
@@ -93,7 +99,13 @@
         android:id="@+id/perfilUsuarioFragment"
         android:name="paulo.antonio.task04.acesso.cliente.PerfilUsuarioFragment"
         android:label="fragment_perfil_usuario"
-        tools:layout="@layout/fragment_perfil_usuario" />
+        tools:layout="@layout/fragment_perfil_usuario" >
+        <action
+            android:id="@+id/action_perfilUsuarioFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
     <fragment
         android:id="@+id/adminFragment"
         android:name="paulo.antonio.task04.acesso.admin.AdminFragment"
@@ -104,6 +116,9 @@
             app:destination="@id/listProdFragment" />
         <action
             android:id="@+id/action_adminFragment_to_cadastrarProdutosFragment"
+            app:destination="@id/cadastrarProdutosFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_cadastrarProdutosFragment2"
             app:destination="@id/cadastrarProdutosFragment" />
     </fragment>
     <fragment
@@ -121,6 +136,11 @@
             app:destination="@id/listagemProdutosFragment"
             app:popUpTo="@id/listagemProdutosFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_cestaDeComprasFragment_to_confirmarPagementoFragment"
+            app:destination="@id/confirmarPagementoFragment"
+            app:popUpTo="@id/confirmarPagementoFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/listProdFragment"
@@ -132,9 +152,18 @@
             app:destination="@id/cadastrarProdutosFragment" />
     </fragment>
     <fragment
-        android:id="@+id/painelFragment"
-        android:name="paulo.antonio.task04.acesso.admin.PainelFragment"
-        android:label="fragment_painel"
-        tools:layout="@layout/fragment_painel" />
+        android:id="@+id/confirmarPagementoFragment"
+        android:name="paulo.antonio.task04.ConfirmarPagementoFragment"
+        android:label="fragment_confirmar_pagemento"
+        tools:layout="@layout/fragment_confirmar_pagemento" >
+        <action
+            android:id="@+id/action_confirmarPagementoFragment_to_retiradaFragment"
+            app:destination="@id/retiradaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/retiradaFragment"
+        android:name="paulo.antonio.task04.RetiradaFragment"
+        android:label="fragment_retirada"
+        tools:layout="@layout/fragment_retirada" />
 
 </navigation>

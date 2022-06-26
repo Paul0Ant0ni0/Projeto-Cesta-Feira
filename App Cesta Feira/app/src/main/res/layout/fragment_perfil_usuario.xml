@@ -22,32 +22,121 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="102dp"
-            android:layout_height="81dp"
+            android:id="@+id/imgUsuario"
+            android:layout_width="93dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="32dp"
             android:src="@drawable/ic_baseline_account_box_24"
-            tools:layout_editor_absoluteX="18dp"
-            tools:layout_editor_absoluteY="120dp" />
+            app:layout_constraintEnd_toStartOf="@+id/nomeUsuario"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:srcCompat="@drawable/group_8833" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/nomeUsuario"
             android:layout_width="202dp"
             android:layout_height="38dp"
             android:gravity="center_vertical"
             android:text="Nome do Usuário"
             android:textAlignment="center"
             android:textColor="#000000"
+            android:textSize="24sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="157dp"
-            tools:layout_editor_absoluteY="145dp" />
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="146dp" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="224dp"
-            tools:layout_editor_absoluteY="241dp" />
+            android:id="@+id/dadosUsuario"
+            android:layout_width="220dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center_vertical"
+            android:text="Meus dados"
+            android:textAlignment="viewStart"
+            android:textColor="#232121"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/nomeUsuario"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/nomeUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/nomeUsuario" />
+
+        <TextView
+            android:id="@+id/configUsuario"
+            android:layout_width="220dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="Configurações"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#232121"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/enderUsuario"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/enderUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/enderUsuario" />
+
+        <TextView
+            android:id="@+id/enderUsuario"
+            android:layout_width="220dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="Endereços"
+            android:textAlignment="viewStart"
+            android:textColor="#232121"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/dadosUsuario"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/dadosUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/dadosUsuario" />
+
+        <Button
+            android:id="@+id/btnSairApp"
+            android:layout_width="197dp"
+            android:layout_height="54dp"
+            android:background="@color/azul_medio"
+            android:text="Sair"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configUsuario"
+            app:layout_constraintVertical_bias="0.635" />
+
+        <ImageView
+            android:id="@+id/iconDadUsu"
+            android:layout_width="45dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toStartOf="@+id/dadosUsuario"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgUsuario" />
+
+        <ImageView
+            android:id="@+id/iconEnd"
+            android:layout_width="45dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/pin"
+            app:layout_constraintEnd_toEndOf="@+id/iconDadUsu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iconDadUsu"
+            app:layout_constraintTop_toBottomOf="@+id/iconDadUsu" />
+
+        <ImageView
+            android:id="@+id/iconConfig"
+            android:layout_width="45dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/setting_alt_line"
+            app:layout_constraintEnd_toEndOf="@+id/iconEnd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iconEnd"
+            app:layout_constraintTop_toBottomOf="@+id/iconEnd" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

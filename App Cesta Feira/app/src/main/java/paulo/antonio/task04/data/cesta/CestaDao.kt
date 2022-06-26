@@ -1,20 +1,19 @@
 package paulo.antonio.task04.data.cesta
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-
+import androidx.room.*
 
 
 @Dao
 interface CestaDao {
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun addProduto(cesta: Cesta)
+    //Inserindo produtos na cesta
+    //Metodo replace substitui a infromação alocada no banco de dados
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun addProduto(produto: Produtos)
 
-    //listando os usuário da tabela
+    //listando os produto da tabela cesta
     @Query("SELECT * FROM cesta_table ORDER BY id ASC")
-    fun selectCesta(): LiveData<List<Cesta>>
+    fun selectCesta(): LiveData<List<Produtos>>
+
 }

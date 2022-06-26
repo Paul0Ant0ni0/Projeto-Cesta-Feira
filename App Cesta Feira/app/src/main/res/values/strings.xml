@@ -44,4 +44,8 @@
     <string name="shops">Lojas</string>
     <string name="explore_more">Explore mais com a conta do iFood</string>
     <string name="enter">Entrar ou cadastrar-se</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

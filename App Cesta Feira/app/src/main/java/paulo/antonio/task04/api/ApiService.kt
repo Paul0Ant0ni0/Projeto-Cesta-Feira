@@ -3,10 +3,7 @@ package paulo.antonio.task04.api
 import paulo.antonio.task04.model.Categoria
 import paulo.antonio.task04.model.Produtos
 import retrofit2.Response
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.PUT
+import retrofit2.http.*
 
 interface ApiService {
 
@@ -21,9 +18,14 @@ interface ApiService {
     @GET("produtos")
     suspend fun listProdutos() : Response<List<Produtos>>
 
-    @PUT("atualizar Produto")
+    @PUT("produtos")
     suspend fun updadeProduto(
         @Body produtos: Produtos
+    ): Response<Produtos>
+
+    @DELETE("produtos/{id}")
+    suspend fun deleteProduto(
+        @Path("id") id: Long
     ): Response<Produtos>
 
 

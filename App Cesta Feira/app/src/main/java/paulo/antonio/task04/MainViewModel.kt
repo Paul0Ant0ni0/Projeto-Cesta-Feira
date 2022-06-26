@@ -11,8 +11,8 @@ import paulo.antonio.task04.api.Repository
 import paulo.antonio.task04.model.Categoria
 import paulo.antonio.task04.model.Produtos
 import retrofit2.Response
-import java.lang.Exception
 import javax.inject.Inject
+import kotlin.Exception
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
@@ -69,11 +69,11 @@ class MainViewModel @Inject constructor(
         }
     }
 
-    fun updateTarefa(produtos: Produtos) {
+    fun updateProduto(produtos: Produtos) {
         viewModelScope.launch {
             try {
 
-                repository.updateProtuto(produtos)
+                repository.updateProduto(produtos)
                 listProduto()
 
             } catch (e: Exception) {
@@ -83,5 +83,17 @@ class MainViewModel @Inject constructor(
             }
         }
 
+    }
+
+    fun deleteProduto(id: Long){
+        viewModelScope.launch {
+            try {
+                repository.deleteProduto(id)
+                listProduto()
+
+            }catch (e: Exception){
+                Log.d("Error Delete", e.message.toString())
+            }
+        }
     }
 }

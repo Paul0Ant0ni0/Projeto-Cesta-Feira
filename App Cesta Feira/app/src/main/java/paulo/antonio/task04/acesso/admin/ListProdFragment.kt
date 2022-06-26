@@ -32,7 +32,7 @@ class ListProdFragment : Fragment(), TeskClickListener {
 
         mainViewModel.listProduto()
 
-        val adapter = AListProduAdpter(this, mainViewModel)
+        val adapter = AListProduAdpter(this, mainViewModel, requireContext())
 
         binding.recyclerAdminListPro.adapter = adapter
         binding.recyclerAdminListPro.layoutManager = LinearLayoutManager(context)

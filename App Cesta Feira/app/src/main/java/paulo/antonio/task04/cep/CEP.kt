@@ -13,7 +13,13 @@ class CEP {
         var gia: String? = ""
 
         override fun toString(): String {
-            return "cep $cep logradouro $logradouro complemento $complemento bairro $bairro localidade $localidade uf $uf unidade $unidade ibge $ibge gia $gia"
+            return  "$cep" +
+                    "\n Logradouro: $logradouro" +
+                    "\n Complemento: $complemento" +
+                    "\n Bairro: $bairro" +
+                    "\n Localidade: $localidade" +
+                    "\n UF: $uf" +
+                    "\n Unidade: $unidade"
         }
 
 }

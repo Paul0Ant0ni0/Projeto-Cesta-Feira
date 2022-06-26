@@ -18,7 +18,6 @@ import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import paulo.antonio.task04.MainViewModel
 import paulo.antonio.task04.R
-import paulo.antonio.task04.databinding.FragmentAdminBinding
 import paulo.antonio.task04.databinding.FragmentCadastrarProdutosBinding
 import paulo.antonio.task04.model.Categoria
 import paulo.antonio.task04.model.Produtos
@@ -63,8 +62,6 @@ class AdminCadProduFragment : Fragment() {
         return binding.root
     }
 
-
-
     private fun inserirDados() {
         val imgProd = urlImg
         val nomeProd = binding.inputProduto.text.toString()
@@ -79,7 +76,7 @@ class AdminCadProduFragment : Fragment() {
             if(produtoSelecionado != null){
                 salvar ="Produto Atualizado"
                 val produtos = Produtos(produtoSelecionado?.id!!, nomeProd, descProd, imgProd, pesoProd, valorProd, categoria)
-                mainViewModel.updateTarefa(produtos)
+                mainViewModel.updateProduto(produtos)
             }else{
                 salvar = "Produto Criado"
                 val produtos = Produtos(0, nomeProd, descProd, imgProd, pesoProd, valorProd, categoria)
@@ -101,6 +98,13 @@ class AdminCadProduFragment : Fragment() {
             binding.inputPeso.setText(produtoSelecionado?.quantidade)
             binding.inputValor.setText(produtoSelecionado?.valor)
             binding.inputDescricao.setText(produtoSelecionado?.descricao)
+        }else{
+            binding.inputProduto.text = null
+            binding.inputPeso.text = null
+            binding.inputValor.text = null
+            Glide.with(this).load(produtoSelecionado?.imagem).placeholder(R.drawable.input_img).into(binding.inputImg)
+            binding.inputDescricao.text = null
+
         }
     }
 
@@ -172,4 +176,5 @@ class AdminCadProduFragment : Fragment() {
 
 
     }
+
 }

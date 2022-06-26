@@ -28,9 +28,15 @@ class ListagemProdutosFragment: Fragment(), TeskClickListener {
         binding = FragmentListagemProdutosBinding.inflate(layoutInflater, container, false)
 
 
+        //Remover depois que colocar o menu de navegação
+        binding.usu.setOnClickListener{
+            findNavController().navigate(R.id.action_listagemProdutosFragment_to_perfilUsuarioFragment)
+        }
+
+
         mainViewModel.listProduto()
 
-        val adapter = ProdutosAdapter(this, mainViewModel)
+        val adapter = context?.let { ProdutosAdapter(this, mainViewModel, it) }
 
         binding.recyclerProdutos.adapter = adapter
         binding.recyclerProdutos.layoutManager = GridLayoutManager(context, 2)
@@ -39,7 +45,7 @@ class ListagemProdutosFragment: Fragment(), TeskClickListener {
 
         mainViewModel.myProdutosResponse.observe(viewLifecycleOwner){
                 response -> if (response.body() != null){
-            adapter.setList(response.body()!!)
+            adapter?.setList(response.body()!!)
         }
         }
 
@@ -50,6 +56,8 @@ class ListagemProdutosFragment: Fragment(), TeskClickListener {
         mainViewModel.produtoSelecionado = produtos
         findNavController().navigate(R.id.action_listagemProdutosFragment_to_produtoFragment)
     }
+
+
 
 
 }

@@ -39,32 +39,18 @@ class LoginFragment : Fragment() {
 
         return binding.root
     }
-
-    /*Precisa fazer a validação do switch, para verficar se o usuário esta logado
+    //Precisa fazer a validação do switch, para verficar se o usuário esta logado
     override fun onStart() {
         super.onStart()
-        val check = binding.statusLogins.isChecked
-
-        view?.let { vadidarStatus(check, it) }
-
+        val usuarioAtual = FirebaseAuth.getInstance().currentUser
+        if (usuarioAtual != null){
+            findNavController().navigate(R.id.action_loginFragment_to_listagemProdutosFragment)
+        }
 
     }
 
-    private fun vadidarStatus(check : Boolean, view: View){
-        if (check){
-            val usuarioAtual = FirebaseAuth.getInstance().currentUser
-            if (usuarioAtual != null){
 
-                findNavController().navigate(R.id.action_loginFragment_to_listagemProdutosFragment)
-            }else{
-                val snackbar = Snackbar.make(view, "Você não está logado!",
-                    Snackbar.LENGTH_SHORT)
-                snackbar.setTextColor(Color.WHITE)
-                snackbar.setBackgroundTint(Color.RED)
-                snackbar.show()
-            }
-        }
-    }*/
+
     private fun loginAdmin(): Boolean {
         val admin = Firebase.auth.currentUser
         val adminApp = "appcestafeira@gmail.com"

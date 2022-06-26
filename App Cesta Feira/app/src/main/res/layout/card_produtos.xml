@@ -27,13 +27,13 @@
             <ImageView
                 android:id="@+id/image_product"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/input_img"
                 android:contentDescription="@string/imagem_produto"
                 android:padding="20dp"
-                tools:ignore="ImageContrastCheck" />
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@drawable/input_img" />
 
             <TextView
                 android:id="@+id/textNomeProduto"

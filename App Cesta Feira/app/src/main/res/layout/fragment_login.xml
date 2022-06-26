@@ -16,8 +16,9 @@
             android:layout_width="298dp"
             android:layout_height="269dp"
             android:layout_marginTop="360dp"
-            app:cardBackgroundColor="#83DF9A10"
+            app:cardBackgroundColor="#83FAA1A1"
             app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,27 +84,14 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="16dp"
                     android:text="Esqueceu a senha?"
                     android:textColor="@color/azul_forte"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/statusLogins"
-                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btn_Acessar" />
 
-                <Switch
-                    android:id="@+id/statusLogins"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:minHeight="48dp"
-                    android:text="Manter logado"
-                    android:textColor="#000000"
-                    android:textColorLink="@color/azul_forte"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_Acessar" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
