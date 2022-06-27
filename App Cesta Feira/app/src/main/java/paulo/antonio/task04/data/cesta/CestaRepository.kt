@@ -7,4 +7,8 @@ class CestaRepository (private val cestaDao: CestaDao) {
     fun addCesta(produtos: Produtos){
         cestaDao.addProduto(produtos)
     }
+
+    fun delete(produtos: Produtos){
+        cestaDao.deleteProduto(produtos)
+    }
 }

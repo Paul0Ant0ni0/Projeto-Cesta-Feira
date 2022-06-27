@@ -1,6 +1,7 @@
 package paulo.antonio.task04.data.cesta
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
@@ -18,11 +19,30 @@ class MainViewModelCesta (application: Application) : AndroidViewModel(applicati
         selectCestas = repository.selectCesta
     }
 
-    fun addProduto(produtos: Produtos){
+    fun addProduto(produtos: Produtos) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.addCesta(produtos)
+            try {
+                repository.addCesta(produtos)
+            } catch (e: Exception) {
+                Log.d("Error Insert Room", e.message.toString())
+            }
+        }
+
+    }
+
+
+    fun deleteProduto(produtos: Produtos) {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                repository.delete(produtos)
+
+            } catch (e: Exception) {
+                Log.d("Error Delete Room", e.message.toString())
+            }
         }
     }
 
 
 }
+
+
