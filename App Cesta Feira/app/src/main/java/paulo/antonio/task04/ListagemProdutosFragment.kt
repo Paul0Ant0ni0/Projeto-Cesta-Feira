@@ -29,7 +29,7 @@ class ListagemProdutosFragment: Fragment(), TeskClickListener {
 
 
         //Remover depois que colocar o menu de navegação
-        binding.usu.setOnClickListener{
+        binding.btnPerfil.setOnClickListener{
             findNavController().navigate(R.id.action_listagemProdutosFragment_to_perfilUsuarioFragment)
         }
 

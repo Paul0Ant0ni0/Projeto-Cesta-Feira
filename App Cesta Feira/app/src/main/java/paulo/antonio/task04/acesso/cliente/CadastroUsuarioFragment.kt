@@ -31,12 +31,15 @@ class CadastroUsuarioFragment : Fragment() {
             container, false)
 
 
+        binding.textLogar.setOnClickListener {
+            findNavController().navigate(R.id.action_cadastroUsuarioFragment_to_loginFragment)
+        }
 
 
         binding.btnCadastrar.setOnClickListener {
             val email = binding.cadEmail.text.toString()
             var senha = binding.cadSenha.text.toString()
-            val cepUsua = binding.cadCep.text.toString()
+            val cepUsua = binding.confSenha.text.toString()
 
 
             cadUsuario(email, senha, cepUsua, it)
@@ -58,7 +61,7 @@ class CadastroUsuarioFragment : Fragment() {
                     snackbar.show()
                     binding.cadEmail.setText("")
                     binding.cadSenha.setText("")
-                    binding.cadCep.setText("")
+                    binding.confSenha.setText("")
                     findNavController().navigate(R.id.action_cadastroUsuarioFragment_to_loginFragment)
                 }
             }.addOnFailureListener { exception ->

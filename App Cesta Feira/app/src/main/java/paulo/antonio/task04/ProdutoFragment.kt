@@ -61,6 +61,8 @@ class ProdutoFragment : Fragment() {
             Glide.with(this).load(produtoSelecionado?.imagem).placeholder(R.drawable.bg_produto).into(binding.imgPreview)
             binding.totalQtdPreview.text = "R$  ${(produtoSelecionado?.quantidade.toString())}"
             binding.totalValorPreview.text =  "Adicionar   R$ ${(produtoSelecionado?.valor)}"
+            binding.pesoPreview.text = "R$  ${(produtoSelecionado?.quantidade.toString())}"
+            binding.totalQtdPreview.text = "R$  ${(produtoSelecionado?.quantidade.toString())}"
             val nome= produtoSelecionado?.nomeMarca
             val qtd = produtoSelecionado?.quantidade
             val valor = produtoSelecionado?.valor 

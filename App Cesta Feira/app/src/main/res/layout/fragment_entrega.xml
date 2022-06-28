@@ -147,7 +147,7 @@
             app:layout_constraintTop_toBottomOf="@+id/divider6" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnHoje"
             android:layout_width="172dp"
             android:layout_height="47dp"
             android:background="@color/azul_medio"
@@ -159,17 +159,17 @@
             tools:layout_editor_absoluteY="524dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnAgendar"
             android:layout_width="172dp"
             android:layout_height="47dp"
             android:background="@color/azul_medio"
             android:text="Agendar"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="@+id/btnHoje"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.692"
-            app:layout_constraintStart_toEndOf="@+id/button"
-            app:layout_constraintTop_toTopOf="@+id/button" />
+            app:layout_constraintStart_toEndOf="@+id/btnHoje"
+            app:layout_constraintTop_toTopOf="@+id/btnHoje" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

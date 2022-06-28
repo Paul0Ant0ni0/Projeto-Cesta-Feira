@@ -33,19 +33,11 @@
     <string name="search_hint">O que você está procurando?</string>
 
     <!--lAYOUTE-->
-    <string name="restaurants">Restaurantes</string>
-    <string name="marketplaces">Mercados</string>
-    <string name="drinks">Bebidas</string>
-    <string name="dotted">&#8226;</string>
-    <string name="famous">Famosos no iFood</string>
-    <string name="see_more">Ver mais</string>
-    <string name="shop_category">\u2022 %1$s \u2022 %2$.1f km</string>
-    <string name="shop_price">%1$s min \u2022 R$ %2$.2f</string>
-    <string name="shops">Lojas</string>
-    <string name="explore_more">Explore mais com a conta do iFood</string>
+
     <string name="enter">Entrar ou cadastrar-se</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_cesta">Cesta</string>
+    <string name="title_cupom">Cupom</string>
+    <string name="title_perfil">Perfil</string>
 </resources>

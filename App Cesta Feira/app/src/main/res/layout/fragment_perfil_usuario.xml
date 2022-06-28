@@ -8,135 +8,161 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="411dp"
-            android:layout_height="101dp"
-            android:layout_marginEnd="4dp"
+            android:id="@+id/toldo"
+            android:layout_width="410dp"
+            android:layout_height="86dp"
             android:scaleType="center"
             android:src="@drawable/toldo"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imgUsuario"
-            android:layout_width="93dp"
-            android:layout_height="66dp"
+        <TextView
+            android:id="@+id/buttonConfig"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
             android:layout_marginTop="32dp"
-            android:src="@drawable/ic_baseline_account_box_24"
-            app:layout_constraintEnd_toStartOf="@+id/nomeUsuario"
-            app:layout_constraintHorizontal_bias="0.468"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            app:srcCompat="@drawable/group_8833" />
-
-        <TextView
-            android:id="@+id/nomeUsuario"
-            android:layout_width="202dp"
-            android:layout_height="38dp"
-            android:gravity="center_vertical"
-            android:text="Nome do Usuário"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="132dp"
-            tools:layout_editor_absoluteY="146dp" />
-
-        <TextView
-            android:id="@+id/dadosUsuario"
-            android:layout_width="220dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="80dp"
-            android:gravity="center_vertical"
-            android:text="Meus dados"
-            android:textAlignment="viewStart"
-            android:textColor="#232121"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/nomeUsuario"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/nomeUsuario"
-            app:layout_constraintTop_toBottomOf="@+id/nomeUsuario" />
-
-        <TextView
-            android:id="@+id/configUsuario"
-            android:layout_width="220dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/setting_alt_line"
+            android:drawableEnd="@drawable/ic_iconpin"
+            android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:text="Configurações"
             android:textAlignment="viewStart"
             android:textAllCaps="false"
             android:textColor="#232121"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/enderUsuario"
+            app:layout_constraintEnd_toEndOf="@+id/buttonEnd"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/enderUsuario"
-            app:layout_constraintTop_toBottomOf="@+id/enderUsuario" />
+            app:layout_constraintStart_toStartOf="@+id/buttonEnd"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEnd"
+            tools:ignore="RtlCompat" />
 
         <TextView
-            android:id="@+id/enderUsuario"
-            android:layout_width="220dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/btnSairApp"
+            android:layout_width="325dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="32dp"
+            android:drawableStart="@drawable/iconsair"
+            android:drawableEnd="@drawable/ic_iconpin"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Sair"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#232121"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonConfig"
+            app:layout_constraintStart_toStartOf="@+id/buttonConfig"
+            app:layout_constraintTop_toBottomOf="@+id/buttonConfig"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/buttonEnd"
+            android:layout_width="324dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:drawableStart="@drawable/pin"
+            android:drawablePadding="10dp"
             android:gravity="center_vertical"
             android:text="Endereços"
             android:textAlignment="viewStart"
             android:textColor="#232121"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/dadosUsuario"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/dadosUsuario"
-            app:layout_constraintTop_toBottomOf="@+id/dadosUsuario" />
+            app:drawableEndCompat="@drawable/ic_iconpin"
+            app:layout_constraintEnd_toEndOf="@+id/buttonDados"
+            app:layout_constraintStart_toStartOf="@+id/buttonDados"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDados"
+            tools:ignore="RtlCompat" />
 
-        <Button
-            android:id="@+id/btnSairApp"
-            android:layout_width="197dp"
-            android:layout_height="54dp"
-            android:background="@color/azul_medio"
-            android:text="Sair"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <TextView
+            android:id="@+id/buttonDados"
+            android:layout_width="324dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="56dp"
+            android:drawableStart="@drawable/user"
+            android:drawableEnd="@drawable/ic_iconpin"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="Meu dados"
+            android:textAlignment="viewStart"
+            android:textColor="#232121"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/configUsuario"
-            app:layout_constraintVertical_bias="0.635" />
+            app:layout_constraintTop_toBottomOf="@+id/nomeUsuario"
+            tools:ignore="MissingConstraints,RtlCompat" />
 
-        <ImageView
-            android:id="@+id/iconDadUsu"
-            android:layout_width="45dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="64dp"
-            android:src="@drawable/user"
-            app:layout_constraintEnd_toStartOf="@+id/dadosUsuario"
-            app:layout_constraintHorizontal_bias="0.536"
+        <TextView
+            android:id="@+id/nomeUsuario"
+            android:layout_width="202dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="52dp"
+            android:gravity="center_vertical"
+            android:text="Nome do Usuário"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgUsuario" />
+            app:layout_constraintTop_toBottomOf="@+id/toldo"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:background="#E0F1F8"
+            app:layout_constraintEnd_toEndOf="@+id/buttonDados"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonDados"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="298dp" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:background="#E0F1F8"
+            app:layout_constraintEnd_toEndOf="@+id/buttonDados"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonDados"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="375dp" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:background="#E0F1F8"
+            app:layout_constraintEnd_toEndOf="@+id/buttonDados"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/buttonDados"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="452dp" />
 
         <ImageView
-            android:id="@+id/iconEnd"
-            android:layout_width="45dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/pin"
-            app:layout_constraintEnd_toEndOf="@+id/iconDadUsu"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/iconDadUsu"
-            app:layout_constraintTop_toBottomOf="@+id/iconDadUsu" />
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/group_8833"
+            app:layout_constraintEnd_toStartOf="@+id/nomeUsuario"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toldo" />
 
-        <ImageView
-            android:id="@+id/iconConfig"
-            android:layout_width="45dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/setting_alt_line"
-            app:layout_constraintEnd_toEndOf="@+id/iconEnd"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/iconEnd"
-            app:layout_constraintTop_toBottomOf="@+id/iconEnd" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -37,7 +37,7 @@ class CestaAdapter(
         holder.binding.textValorCesta.text = "R$ ${produto.valor}"
         holder.binding.textInfoCesta.text = "Compra a cada 100g"
 
-        holder.itemView.setOnClickListener {
+        holder.binding.deletProd.setOnClickListener {
             showAlertDialog(produto)
         }
 

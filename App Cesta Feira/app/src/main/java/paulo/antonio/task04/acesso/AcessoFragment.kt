@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 import paulo.antonio.task04.R
 import paulo.antonio.task04.cep.CEP
 import paulo.antonio.task04.cep.RetrofitInitializer

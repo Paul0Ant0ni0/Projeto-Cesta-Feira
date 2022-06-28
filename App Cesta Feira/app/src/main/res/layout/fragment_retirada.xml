@@ -8,7 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
@@ -20,14 +21,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView2"
+            <ImageView
+                android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rectangle_20" />
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btnMap"
             android:layout_width="172dp"
             android:layout_height="47dp"
             android:background="@color/azul_medio"
@@ -44,11 +47,15 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Entrega"
+            android:layout_marginBottom="76dp"
+            android:text="Retirada"
             android:textColor="#000000"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="162dp"
-            tools:layout_editor_absoluteY="37dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints" />
 
         <ImageView

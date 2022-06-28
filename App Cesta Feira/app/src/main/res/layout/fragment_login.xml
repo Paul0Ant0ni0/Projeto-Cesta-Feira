@@ -10,90 +10,91 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/acesso_usuario">
+        android:background="@drawable/bglogin_">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="298dp"
-            android:layout_height="269dp"
-            android:layout_marginTop="360dp"
-            app:cardBackgroundColor="#83FAA1A1"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="10dp"
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#403C3C"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <EditText
+            android:id="@+id/input_senha"
+            android:layout_width="265dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/edit_text"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/azul_medio"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:paddingStart="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#403C3C"
+            app:layout_constraintEnd_toEndOf="@+id/input_email"
+            app:layout_constraintStart_toStartOf="@+id/input_email"
+            app:layout_constraintTop_toBottomOf="@+id/input_email" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="203dp"
+            android:layout_height="249dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/logoblack"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.212" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#00511717">
+        <Button
+            android:id="@+id/btn_Acessar"
+            android:layout_width="262dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/azul_medio"
+            android:text="Entrar"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/input_senha"
+            app:layout_constraintStart_toStartOf="@+id/input_senha"
+            app:layout_constraintTop_toBottomOf="@+id/input_senha" />
 
-                <EditText
-                    android:id="@+id/input_email"
-                    android:layout_width="208dp"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="44dp"
-                    android:background="@drawable/edit_text"
-                    android:drawableStart="@drawable/ic_baseline_account_box_24"
-                    android:ems="10"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress"
-                    android:paddingStart="5dp"
-                    android:textColor="#000000"
-                    android:textColorHint="#403C3C"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.494"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Esqueceu a senha?"
+            android:textColor="#2B2727"
+            app:layout_constraintEnd_toEndOf="@+id/btn_Acessar"
+            app:layout_constraintStart_toStartOf="@+id/btn_Acessar"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Acessar" />
 
-                <EditText
-                    android:id="@+id/input_senha"
-                    android:layout_width="208dp"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="12dp"
-                    android:background="@drawable/edit_text"
-                    android:drawableStart="@drawable/ic_baseline_lock_24"
-                    android:ems="10"
-                    android:hint="Senha"
-                    android:inputType="textPassword"
-                    android:paddingStart="5dp"
-                    android:textColor="#000000"
-                    android:textColorHint="#403C3C"
-                    app:layout_constraintEnd_toEndOf="@+id/input_email"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/input_email"
-                    app:layout_constraintTop_toBottomOf="@+id/input_email" />
-
-                <Button
-                    android:id="@+id/btn_Acessar"
-                    android:layout_width="133dp"
-                    android:layout_height="53dp"
-                    android:layout_marginTop="12dp"
-                    android:backgroundTint="@color/azul_medio"
-                    android:text="Acessar"
-                    android:textColor="#FFFFFF"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/input_senha"
-                    app:layout_constraintHorizontal_bias="0.506"
-                    app:layout_constraintStart_toStartOf="@+id/input_senha"
-                    app:layout_constraintTop_toBottomOf="@+id/input_senha" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="92dp"
-                    android:layout_marginTop="16dp"
-                    android:text="Esqueceu a senha?"
-                    android:textColor="@color/azul_forte"
-                    android:textStyle="bold"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/btn_Acessar" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/recupSenhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Recupere aqui"
+            android:textColor="@color/azul_medio"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

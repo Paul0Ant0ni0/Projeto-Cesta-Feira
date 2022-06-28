@@ -27,15 +27,32 @@
                 app:layout_constraintTop_toTopOf="parent">>
 
                 <ImageView
-                    android:id="@+id/imgPreview"
+                    android:id="@+id/bgImagem"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="334dp"
+                    android:scaleType="centerCrop"
                     android:src="@drawable/lim_o"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:srcCompat="@drawable/bg_produto" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_produto">
+
+                    <ImageView
+                        android:id="@+id/imgPreview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lim_o"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
             <TextView
