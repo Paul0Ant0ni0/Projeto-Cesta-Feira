@@ -1,0 +1,3 @@
+# Projeto-Cesta-Feira
+O aplicativo Cesta Feira foi criado com a intensão de agilizar todo o processo e reduzir significativamente as perdas realizadas no transporte dos alimentos. Com base em pesquisas, identificamos que hoje mais de 80% dos alimentos são perdidos entre o transporte e o manuseio nos centros de distribuições. Portanto tomamos a iniciativa de criar um e-commerce que propõe conectar produtor e consumidor, dessa forma impacta diretamente no custo-benefício aos consumidores e maior visibilidade do agricultores familiares.
+![Produto](https://user-images.githubusercontent.com/96313008/176702742-228747bf-4aa0-4880-bed6-ea3dece111ed.png)
