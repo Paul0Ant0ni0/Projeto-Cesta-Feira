@@ -3,6 +3,10 @@
 O aplicativo Cesta Feira foi criado com a intensão de agilizar todo o processo e reduzir significativamente as perdas realizadas no transporte dos alimentos. Com base em pesquisas, identificamos que hoje mais de 80% dos alimentos são perdidos entre o transporte e o manuseio nos centros de distribuições. Portanto tomamos a iniciativa de criar um e-commerce que propõe conectar produtor e consumidor, dessa forma impacta diretamente no custo-benefício aos consumidores e maior visibilidade do agricultores familiares.
 
 <hr>
+<h2>Equipe do projeto</h2>
+👩‍💻 Link: https://linktr.ee/cesta_feira 👨‍💻 <br>
+
+<hr>
 <h2>Ferramentas Utilizadas: </h2> <br>
 Glide - Link: https://github.com/bumptech/glide <br>
 Hilt - Link: https://dagger.dev/hilt/ <br>
