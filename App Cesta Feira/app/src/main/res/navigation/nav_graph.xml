@@ -169,6 +169,12 @@
         android:id="@+id/retiradaFragment"
         android:name="paulo.antonio.task04.RetiradaFragment"
         android:label="fragment_retirada"
-        tools:layout="@layout/fragment_retirada" />
+        tools:layout="@layout/fragment_retirada" >
+        <action
+            android:id="@+id/action_retiradaFragment_to_listagemProdutosFragment"
+            app:destination="@id/listagemProdutosFragment"
+            app:popUpTo="@id/listagemProdutosFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 </navigation>

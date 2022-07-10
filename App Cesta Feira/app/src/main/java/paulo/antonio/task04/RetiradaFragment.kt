@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
+import androidx.navigation.fragment.findNavController
 import paulo.antonio.task04.databinding.FragmentEntregaBinding
 import paulo.antonio.task04.databinding.FragmentRetiradaBinding
 
@@ -30,6 +31,10 @@ class RetiradaFragment : Fragment() {
                 fragment.setPackage("com.google.android.apps.maps")
                 startActivity(fragment)
 
+            }
+
+            binding.btVoltar.setOnClickListener {
+                findNavController().navigate(R.id.action_retiradaFragment_to_listagemProdutosFragment)
             }
 
             return binding.root
