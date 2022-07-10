@@ -171,6 +171,19 @@
             app:layout_constraintStart_toEndOf="@+id/btnHoje"
             app:layout_constraintTop_toTopOf="@+id/btnHoje" />
 
+        <ImageButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:src="@drawable/btn_voltar"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.197" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

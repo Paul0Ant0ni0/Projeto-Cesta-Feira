@@ -164,6 +164,11 @@
         <action
             android:id="@+id/action_confirmarPagementoFragment_to_retiradaFragment"
             app:destination="@id/retiradaFragment" />
+        <action
+            android:id="@+id/action_confirmarPagementoFragment_to_cestaDeComprasFragment"
+            app:destination="@id/cestaDeComprasFragment"
+            app:popUpTo="@id/cestaDeComprasFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/retiradaFragment"

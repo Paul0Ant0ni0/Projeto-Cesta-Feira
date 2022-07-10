@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import paulo.antonio.task04.databinding.FragmentEntregaBinding
 import javax.inject.Singleton
 
@@ -21,6 +22,9 @@ class EntregaFragment : Fragment() {
 
         binding = FragmentEntregaBinding.inflate(layoutInflater, container, false)
 
+        binding.btnVoltar.setOnClickListener {
+            findNavController().navigate(R.id.action_confirmarPagementoFragment_to_cestaDeComprasFragment)
+        }
 
 
 

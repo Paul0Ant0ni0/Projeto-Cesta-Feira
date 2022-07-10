@@ -33,7 +33,11 @@ class RetiradaFragment : Fragment() {
 
             }
 
+<<<<<<< HEAD
             binding.btVoltar.setOnClickListener {
+=======
+            binding.voltarBtn.setOnClickListener {
+>>>>>>> origin
                 findNavController().navigate(R.id.action_retiradaFragment_to_listagemProdutosFragment)
             }
 
